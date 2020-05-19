@@ -1,0 +1,217 @@
+body{
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main{
+     width: 800px;
+}
+.text{
+    color: white;
+    font-size: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.icon-box{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+/*  ----------------------cloud 1--------------- */
+.cloud{
+    width: 130px;
+}
+.sun{
+    width: 100px;
+    position: absolute;
+    z-index: -1;
+    filter: invert(100%);
+    top: 28px;
+    left: 86px;
+    animation:sun-animation 9s infinite linear;
+}
+.fa-tint{
+     color: #363636;
+     background-color: #161616;
+     font-size: 25px;
+     position: absolute;
+     transform: rotate(20deg);
+}
+.drop-1{
+    top: 101px;
+    left: 80px;
+    padding: 10px;
+    animation:drop-1-animation 2s infinite alternate;
+}
+.drop-2{
+    top: 122px;
+    left: 60px;
+    padding: 1px;
+    z-index: 2;
+    animation:drop-1-animation 2s infinite alternate;
+    animation-delay: 1s;
+}
+.drop-3{
+    top: 139px;
+    left: 95px;
+    padding: 1px;
+    z-index: 2;
+    font-size: 17px;
+    animation:drop-1-animation 2s infinite alternate;
+    animation-delay: 2s;
+}
+.drop-4{
+    top: 145px;
+    left: 77px;
+    padding: 1px;
+    z-index: 2;
+    font-size: 17px;
+    animation:drop-1-animation 2s infinite alternate;
+    animation-delay: 1s;
+}
+/* -----------cloud 1 animations */
+@keyframes sun-animation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes drop-1-animation{
+    from{
+        color: #363636;
+    }
+    to{
+        color: rgb(0, 132, 255);
+    }
+}
+
+
+/* cloud 2 */
+
+.bolt{
+    background-color: #161616;
+    position: absolute;
+    padding: 5px;
+    top: 110px;
+}
+.fa-bolt{
+    color: #363636;
+    font-size: 45px;
+    transform: rotate(20deg);
+}
+.bolt-1{
+     animation:bolt 1s infinite  ;
+}
+.bolt-2{
+   position: relative;
+   font-size: 30px;
+   top: 10px;
+   animation:bolt 1.5s infinite ;
+}
+/* ----------------bolt aintions */
+@keyframes bolt{
+    0%{
+        color: #363636;
+    }
+    50%{
+        color: #363636;
+    }
+    60%{
+        color: rgb(0, 132, 255);
+    }
+    80%{
+        color: #363636;
+    }
+    100%{
+        color: #363636;
+    }
+}
+
+
+
+/*    ----------------cloud icons */
+
+.fa-cloud{
+    position: absolute;
+    color:#363636;
+    font-size: 4rem;
+    top: 40px;
+    z-index: -1;
+    left: 100px;
+    animation: cloud-2 3s infinite linear reverse;
+}
+
+/* -------------------------cloud 3 animation */
+@keyframes cloud-2{
+    0%{
+      opacity: 0;
+    }
+    10%{
+       left: 10px;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* -----------------cloud 4 animtion */
+.fa-snowflake{
+    color: rgb(165, 165, 165);
+    position: relative;
+    animation:sun-animation 9s infinite linear;
+}
+.snow-1{
+    position: relative;
+    left: 10px;
+    top: -10px;
+}
+.snow-2{
+    font-size: 15px;
+    left: 20px;
+}
+.snow-3{
+    font-size: 20px ;
+    top: 20px;
+    left: -20px;
+}
+.snow-4{
+    font-size: 25px !important;
+    top: 30px;
+    left: -14px;
+}
+.snow{
+    background-color: #161616;
+    position: absolute;
+    padding: 5px;
+    top: 120px;
+}
+
+/* -------------------sun animation 5 */
+
+
+.sun2{
+    position: static;
+    width:120px;
+}
